@@ -1,0 +1,39 @@
+name: Deploy GoClaw to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Deployment Commands on VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: root
+          port: 2018
+          password: ${{ secrets.VPS_PASSWORD }}
+          script: |
+            export DEBIAN_FRONTEND=noninteractive
+            
+            # Di chuyển tới thư mục deploy
+            if [ ! -d "/opt/agent-chatbot" ]; then
+              git clone https://github.com/Ziva2k/agent-chatbot.git /opt/agent-chatbot
+            fi
+            
+            cd /opt/agent-chatbot
+            git pull origin main
+            
+            # Phân quyền cho script tự trích xuất biến môi trường
+            chmod +x prepare-env.sh
+            ./prepare-env.sh || true
+            
+            # Đảm bảo goclaw chỉ bind vào localhost bên trong VPS để Nginx Reverse Proxy xử lý public
+            export GOCLAW_HOST=127.0.0.1
+            export GOCLAW_PORT=18790
+            
+            # Tiến hành khởi chạy GoClaw
+            make up
