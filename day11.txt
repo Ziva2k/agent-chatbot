@@ -1,0 +1,12 @@
+Chào mọi người,
+
+Hôm nay mình chia sẻ một chút niềm vui nho nhỏ. Từ hôm nay, hệ thống Thu Hồi Nợ PRO đã chính thức được "nâng cấp". Bất kỳ ai để lại thông tin đăng ký tư vấn trên web, hệ thống sẽ tự động gửi một chuỗi email đến thẳng hộp thư của bạn.
+
+Mình biết khi nghe đến "email tự động", nhiều anh em sẽ nhăn mặt nghĩ ngay đến dăm ba cái thư rác hô hào mua hàng, hứa hẹn hão huyền. Nhưng xin khẳng định: Ở đây không có chuyện đó.
+
+Tất cả những email mình cài đặt đều là những thông tin thực chiến, những sự thật có phần trần trụi về tâm lý con nợ mà ít ai dám nói thẳng, và đương nhiên — không có một chữ lý thuyết suông nào cả. Mình viết bằng đúng cái giọng hằng ngày, hơi "gai góc" một xíu nhưng là những lời thẳng thắn của một người anh em muốn bạn lấy lại được đồng tiền xương máu của mình. Không mơn trớn, không thảo mai. Khó nghe một chút, nhưng làm thì ra kết quả.
+
+Xây xong cái luồng chạy hoàn toàn tự động này cũng thấy khá tự hào. Anh em có khoản nào mãi chưa về tài khoản mà muốn trải nghiệm thử sự "xéo xắt nhẹ nhàng" của những email này, cứ lên thẳng website để lại cái hẹn nhé.
+
+Anh em có thể xem hệ thống và trải nghiệm tại: [điền_link_website_của_bạn_vào_đây]
+(Hoặc test thử web mình đang code ở máy: http://localhost:5000)

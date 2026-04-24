@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thu Hồi Nợ Khó Đòi | Chuyên Nghiệp, Nhanh Chóng & Đúng Pháp Luật</title>
+    <meta name="description"
+        content="Dịch vụ thu hồi nợ chuyên nghiệp, hợp pháp. Tỷ lệ thành công cao. Không thu phí nếu không thu hồi được tiền. Hơn 1000 hồ sơ đã xử lý thành công.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4L6 12V28L20 36L34 28V12L20 4Z" stroke="url(#lgNav)" stroke-width="2"
+                            fill="none" />
+                        <path d="M20 12V28M14 18H26M12 22H28" stroke="url(#lgNav)" stroke-width="2"
+                            stroke-linecap="round" />
+                        <defs>
+                            <linearGradient id="lgNav" x1="6" y1="4" x2="34" y2="36">
+                                <stop stop-color="#FF6B00" />
+                                <stop offset="1" stop-color="#FF9A40" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">THU HỒI NỢ <span class="accent">PRO</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#pain">Vấn Đề</a></li>
+                <li><a href="#solution">Giải Pháp</a></li>
+                <li><a href="#process">Quy Trình</a></li>
+                <li><a href="#proof">Thực Tế</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="https://chat.zalo.me/?phone=0898437922" class="nav-cta" id="navCta" target="_blank"
+                rel="noopener noreferrer">Nhắn Zalo Ngay</a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====================================================
+         SECTION 1: HERO
+         ==================================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="hero-bg.png" alt="Chuyên gia thu hồi nợ" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <!-- Orange glow orb decorative -->
+        <div class="hero-glow-orb"></div>
+        <div class="container hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-pulse"></span>
+                Dịch vụ thu hồi nợ hàng đầu Việt Nam
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                GIẢI PHÁP THU HỒI<br>NỢ KHÓ ĐÒI
+                <span class="hero-title-accent">Chuyên Nghiệp, Nhanh Chóng<br>& Đúng Pháp Luật</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Bạn mệt mỏi vì con nợ hứa suông? Bạn lo lắng vì khoản tiền tích lũy có nguy cơ <strong>mất
+                    trắng</strong>?
+                Hãy để đội ngũ chuyên gia xử lý nợ thay bạn — <strong>lấy lại sự công bằng</strong>.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="https://chat.zalo.me/?phone=0898437922" class="btn btn-primary btn-lg" id="heroCta"
+                    target="_blank" rel="noopener noreferrer">
+                    <span>Nhắn Zalo Tư Vấn Miễn Phí</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-guarantee animate-on-scroll">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                <span><strong>Cam kết:</strong> Không thu phí nếu không thu hồi được tiền.</span>
+            </div>
+        </div>
+        <a href="#register" class="hero-learn-more" id="heroLearnMore">
+            <span class="learn-more-text">Tìm hiểu thêm</span>
+            <span class="learn-more-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+            </span>
+        </a>
+    </section>
+
+    <!-- ====================================================
+         SECTION 2: PAIN POINTS
+         ==================================================== -->
+    <section class="section pain-section" id="pain">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Nỗi Đau</span>
+                <h2 class="section-title">Có Phải Bạn Đang Rơi Vào<br><span class="text-accent">Tình Cảnh Này?</span>
+                </h2>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card animate-on-scroll" style="--delay:0.1s">
+                    <div class="pain-card-number">01</div>
+                    <h3>Con Nợ "Bốc Hơi"</h3>
+                    <p>Cố tình khóa máy, chặn liên lạc, thay đổi chỗ ở — biến mất như chưa từng quen biết bạn.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="pain-card animate-on-scroll" style="--delay:0.2s">
+                    <div class="pain-card-number">02</div>
+                    <h3>Lời Hứa "Lèo"</h3>
+                    <p>Hứa trả hết lần này đến lần khác nhưng không bao giờ thực hiện. Bạn cứ chờ đợi… mãi.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="pain-card animate-on-scroll" style="--delay:0.3s">
+                    <div class="pain-card-number">03</div>
+                    <h3>Bế Tắc Pháp Lý</h3>
+                    <p>Không biết bắt đầu kiện tụng từ đâu, hồ sơ giấy tờ thiếu sót, bạn cảm thấy bất lực hoàn toàn.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="pain-card animate-on-scroll" style="--delay:0.4s">
+                    <div class="pain-card-number">04</div>
+                    <h3>Áp Lực Tâm Lý</h3>
+                    <p>Muốn đòi tiền nhưng sợ va chạm, sợ ảnh hưởng đến uy tín cá nhân hoặc doanh nghiệp của mình.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 3: SOLUTION
+         ==================================================== -->
+    <section class="section solution-section" id="solution">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Giải Pháp</span>
+                <h2 class="section-title">Tại Sao Hàng Nghìn Khách Hàng<br><span class="text-accent">Tin Tưởng Chúng
+                        Tôi?</span></h2>
+            </div>
+            <div class="solution-grid">
+                <div class="solution-card animate-on-scroll" style="--delay:0.1s">
+                    <div class="solution-icon-wrap">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="24" height="24" rx="4" />
+                            <path d="M10 16l4 4 8-8" />
+                        </svg>
+                    </div>
+                    <h3>Thực Thi Theo Pháp Luật</h3>
+                    <p>Sử dụng các biện pháp đàm phán, hòa giải và khởi kiện dân sự theo đúng quy định nhà nước.</p>
+                </div>
+                <div class="solution-card animate-on-scroll" style="--delay:0.2s">
+                    <div class="solution-icon-wrap">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M16 28s10-5 10-12.5V8l-10-4-10 4v7.5C6 23 16 28 16 28z" />
+                            <path d="M12 15l3 3 5-5" />
+                        </svg>
+                    </div>
+                    <h3>Bảo Mật Tuyệt Đối</h3>
+                    <p>Thông tin khách hàng và khoản nợ được giữ kín 100%. Ký cam kết bảo mật NDA trước khi tiếp nhận.
+                    </p>
+                </div>
+                <div class="solution-card animate-on-scroll" style="--delay:0.3s">
+                    <div class="solution-icon-wrap">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="5" />
+                            <circle cx="22" cy="14" r="5" />
+                            <path d="M4 26c0-5 4-8 8-8 1.5 0 3 .4 4 1 1-0.6 2.5-1 4-1 4 0 8 3 8 8" />
+                        </svg>
+                    </div>
+                    <h3>Đội Ngũ Tinh Nhuệ</h3>
+                    <p>Luật sư dày dặn kinh nghiệm kết hợp chuyên viên tâm lý đàm phán — xử lý vụ nợ phức tạp nhất.</p>
+                </div>
+                <div class="solution-card animate-on-scroll" style="--delay:0.4s">
+                    <div class="solution-icon-wrap">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="16" cy="16" r="12" />
+                            <path d="M12 20l2-8h4l2 8M13 16h6" />
+                        </svg>
+                    </div>
+                    <h3>Chi Phí Tối Ưu</h3>
+                    <p>Chỉ trích phần trăm dựa trên số tiền thực tế thu hồi được. <strong>Không thu hồi = Không mất
+                            phí.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 4: PROCESS — 4 BƯỚC
+         ==================================================== -->
+    <section class="section process-section" id="process">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Quy Trình</span>
+                <h2 class="section-title">Quy Trình Làm Việc<br><span class="text-accent">4 Bước Rõ Ràng</span></h2>
+            </div>
+            <div class="process-timeline">
+                <div class="timeline-line" id="timelineLine"></div>
+                <div class="process-step animate-on-scroll" style="--delay:0.1s">
+                    <div class="step-marker"><span class="step-num">1</span></div>
+                    <div class="step-body">
+                        <h3>Tiếp Nhận Hồ Sơ</h3>
+                        <p>Kiểm tra tính pháp lý của các chứng từ nợ: giấy viết tay, tin nhắn, hợp đồng, sao kê chuyển
+                            khoản…</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll" style="--delay:0.2s">
+                    <div class="step-marker"><span class="step-num">2</span></div>
+                    <div class="step-body">
+                        <h3>Xác Minh Đối Tượng</h3>
+                        <p>Tìm hiểu khả năng tài chính và nơi cư trú thực tế của con nợ. Đánh giá mức độ khả thi thu
+                            hồi.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll" style="--delay:0.3s">
+                    <div class="step-marker"><span class="step-num">3</span></div>
+                    <div class="step-body">
+                        <h3>Tác Động Thu Hồi</h3>
+                        <p>Thực hiện nghiệp vụ đàm phán trực tiếp hoặc gửi thông báo pháp lý từ văn phòng luật sư.</p>
+                    </div>
+                </div>
+                <div class="process-step animate-on-scroll" style="--delay:0.4s">
+                    <div class="step-marker"><span class="step-num">4</span></div>
+                    <div class="step-body">
+                        <h3>Bàn Giao Tài Sản</h3>
+                        <p>Thu tiền và thực hiện thanh lý hợp đồng dịch vụ. Tiền về tay bạn — nhanh gọn, minh bạch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 5: SOCIAL PROOF
+         ==================================================== -->
+    <section class="section proof-section" id="proof">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Bằng Chứng</span>
+                <h2 class="section-title">Bằng Chứng Thực Tế<br><span class="text-accent">Từ Con Số Ấn Tượng</span></h2>
+            </div>
+            <div class="proof-stats animate-on-scroll">
+                <div class="proof-stat">
+                    <div class="proof-stat-number"><span class="counter" data-target="1000">0</span><span
+                            class="stat-plus">+</span></div>
+                    <div class="proof-stat-label">Hồ sơ đã xử lý thành công</div>
+                </div>
+                <div class="proof-stat-divider"></div>
+                <div class="proof-stat">
+                    <div class="proof-stat-number"><span class="counter" data-target="500">0</span><span
+                            class="stat-plus"> tỷ+</span></div>
+                    <div class="proof-stat-label">Tổng số tiền đã thu hồi (VNĐ)</div>
+                </div>
+                <div class="proof-stat-divider"></div>
+                <div class="proof-stat">
+                    <div class="proof-stat-number"><span class="counter" data-target="10">0</span><span
+                            class="stat-plus"> năm</span></div>
+                    <div class="proof-stat-label">Kinh nghiệm xử lý tài chính</div>
+                </div>
+            </div>
+            <div class="testimonial-block animate-on-scroll" style="--delay:0.2s">
+                <div class="testimonial-quote-mark">"</div>
+                <blockquote>
+                    Tôi từng nghĩ là mất trắng 2 tỷ vì đối tác bỏ trốn, nhưng nhờ đội ngũ chuyên nghiệp, tôi đã nhận lại
+                    được tiền chỉ sau 2 tháng.
+                </blockquote>
+                <div class="testimonial-author">
+                    <div class="author-avatar-circle">H</div>
+                    <div class="author-info">
+                        <strong>Anh H.</strong>
+                        <span>Chủ doanh nghiệp xây dựng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 6: FAQ
+         ==================================================== -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Câu Hỏi<br><span class="text-accent">Thường Gặp</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll" style="--delay:0.1s">
+                    <button class="faq-question" id="faq1">
+                        <span>Có sử dụng các biện pháp gây áp lực tiêu cực không?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Chúng tôi cam kết chỉ sử dụng nghiệp vụ đàm phán và pháp lý. Đảm bảo an toàn tuyệt đối cho
+                            danh dự và uy tín của khách hàng. Không bao giờ sử dụng bất kỳ biện pháp trái pháp luật nào.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay:0.2s">
+                    <button class="faq-question" id="faq2">
+                        <span>Chi phí dịch vụ là bao nhiêu?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Phí dịch vụ dao động từ <strong>15% – 30%</strong> tùy vào giá trị khoản nợ và mức độ khó của
+                            hồ sơ. Đặc biệt, chúng tôi chỉ thu phí khi thu hồi được tiền cho bạn.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll" style="--delay:0.3s">
+                    <button class="faq-question" id="faq3">
+                        <span>Cần chuẩn bị giấy tờ gì?</span>
+                        <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Chỉ cần hình ảnh chứng nợ: <strong>Giấy vay, sao kê chuyển khoản, tin nhắn
+                                Zalo/Messenger</strong> xác nhận nợ. Chúng tôi sẽ hỗ trợ bạn kiểm tra và hoàn thiện hồ
+                            sơ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 7: REGISTER FORM
+         ==================================================== -->
+    <section class="section register-section" id="register">
+        <div class="container">
+            <div class="register-layout">
+                <div class="register-content animate-on-scroll">
+                    <span class="section-tag tag-light">Hành Động Ngay</span>
+                    <h2 class="register-title">ĐỪNG ĐỂ MẤT TRẮNG<br><span class="text-accent">KHOẢN TIỀN CỦA BẠN!</span>
+                    </h2>
+                    <p class="register-desc">Mỗi ngày trôi qua, con nợ có thêm thời gian để tẩu tán tài sản.
+                        <strong>Hành động ngay</strong> — để chúng tôi giúp bạn lấy lại những gì thuộc về bạn.
+                    </p>
+                    <div class="register-guarantees">
+                        <div class="guarantee-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                            <span>Tư vấn miễn phí 100%</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                            <span>Không thu hồi, không thu phí</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                            <span>Bảo mật thông tin tuyệt đối</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4" />
+                                <circle cx="12" cy="12" r="10" />
+                            </svg>
+                            <span>Phản hồi trong 30 phút</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="register-form-wrap animate-on-scroll" style="--delay:0.2s">
+                    <form class="register-form" id="registerForm">
+                        <h3>Yêu Cầu Xử Lý Nợ</h3>
+                        <p>Điền thông tin — chúng tôi sẽ liên hệ tư vấn ngay.</p>
+
+                        <div class="form-group">
+                            <label>1. Anh/Chị vui lòng cho biết Họ tên, Số điện thoại (Zalo) và Email để chúng tôi gửi tài liệu quy trình bảo mật?<br><span
+                                    style="font-weight:normal;font-size:12px;color:var(--text-muted);text-transform:none;letter-spacing:0;display:block;margin-top:4px;">(Câu
+                                    hỏi này lồng ghép yếu tố "bảo mật" để khách hàng yên tâm để lại thông
+                                    tin).</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Nhập họ và tên" required
+                                style="margin-bottom: 12px;">
+                            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại / Zalo" required
+                                style="margin-bottom: 12px;">
+                            <input type="email" id="email" name="email" placeholder="Nhập địa chỉ Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>2. Tổng số tiền (nợ xấu/nợ quá hạn) mà Anh/Chị đang cần thu hồi sớm để tái đầu tư là
+                                bao nhiêu? <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="debtAmount" value="Dưới 100 triệu"
+                                        required> <span>Dưới 100 triệu</span></label>
+                                <label class="radio-label"><input type="radio" name="debtAmount"
+                                        value="100 - 500 triệu"> <span>100 - 500 triệu</span></label>
+                                <label class="radio-label"><input type="radio" name="debtAmount" value="Trên 500 triệu">
+                                    <span>Trên 500 triệu</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>3. Khoản nợ này đã quá hạn trong khoảng thời gian bao lâu? <span
+                                    class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="debtTime" value="Dưới 6 tháng"
+                                        required> <span>Dưới 6 tháng</span></label>
+                                <label class="radio-label"><input type="radio" name="debtTime" value="6 tháng - 1 năm">
+                                    <span>6 tháng - 1 năm</span></label>
+                                <label class="radio-label"><input type="radio" name="debtTime" value="Trên 1 năm">
+                                    <span>Trên 1 năm</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>4. Anh/Chị hiện còn giữ các chứng từ pháp lý nào? (Có thể chọn nhiều mục)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label"><input type="checkbox" name="docs"
+                                        value="Hợp đồng/Giấy cam kết nợ"> <span>Hợp đồng/Giấy cam kết nợ</span></label>
+                                <label class="checkbox-label"><input type="checkbox" name="docs"
+                                        value="Tin nhắn/Email xác nhận nợ"> <span>Tin nhắn/Email xác nhận
+                                        nợ</span></label>
+                                <label class="checkbox-label"><input type="checkbox" name="docs"
+                                        value="Chỉ có giao dịch chuyển khoản"> <span>Chỉ có giao dịch chuyển
+                                        khoản</span></label>
+                                <label class="checkbox-label" id="docOtherWrapper"><input type="checkbox" name="docs"
+                                        value="Khác" id="docOtherCheckbox"> <span>Khác:</span></label>
+                                <input type="text" id="docOtherText" placeholder="Nhập chứng từ khác..."
+                                    style="display:none; margin-top:8px;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>5. Mức độ cấp thiết để Anh/Chị cần nguồn vốn này quay lại phục vụ kinh doanh/đầu tư?
+                                <span class="required">*</span></label>
+                            <div class="radio-group">
+                                <label class="radio-label"><input type="radio" name="urgency"
+                                        value="Rất gấp (Cần ngay trong tháng)" required> <span>Rất gấp (Cần ngay trong
+                                        tháng)</span></label>
+                                <label class="radio-label"><input type="radio" name="urgency"
+                                        value="Đang tìm phương án xử lý phù hợp"> <span>Đang tìm phương án xử lý phù
+                                        hợp</span></label>
+                                <label class="radio-label"><input type="radio" name="urgency"
+                                        value="Chỉ muốn tham khảo phí dịch vụ"> <span>Chỉ muốn tham khảo phí dịch
+                                        vụ</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>6. Hình thức liên hệ mong muốn của Anh/Chị?</label>
+                            <div class="radio-group" style="flex-direction: column; gap: 8px;">
+                                <label class="radio-label">
+                                    <input type="radio" name="contactMethod" value="Qua Zalo" checked>
+                                    <span>Tư vấn qua Zalo ngay bây giờ</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="contactMethod" value="Chỉ cần điền form">
+                                    <span>Chỉ điền thông tin đăng ký (Không cần tư vấn qua Zalo)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-submit btn-lg btn-full" id="preSubmitBtn">
+                            <span>GỬI & NHẮN ZALO TƯ VẤN NGAY</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                        <p class="form-privacy">🔒 Thông tin được bảo mật tuyệt đối theo quy định pháp luật</p>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <path d="M20 6L9 17l-5-5" />
+                            </svg>
+                        </div>
+                        <h3>Gửi Thành Công!</h3>
+                        <p>Cảm ơn bạn đã tin tưởng. Chúng tôi sẽ liên hệ bạn trong vòng <strong>30 phút</strong> để tư
+                            vấn chi tiết.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================
+         SECTION 8: THANH TOÁN QR — SEPAY
+         ==================================================== -->
+    <section class="section payment-section" id="payment">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Thanh Toán</span>
+                <h2 class="section-title">Thanh Toán Nhanh<br><span class="text-accent">Quét QR Chuyển Khoản</span></h2>
+                <p class="payment-subtitle">Quét mã QR bằng app ngân hàng — thông tin chuyển khoản được điền sẵn tự
+                    động, nhanh chóng & chính xác.</p>
+            </div>
+            <div class="payment-card animate-on-scroll" style="--delay:0.15s">
+                <div class="payment-card-inner">
+                    <!-- QR Code Side -->
+                    <div class="payment-qr-side">
+                        <div class="qr-frame">
+                            <div class="qr-corner qr-corner-tl"></div>
+                            <div class="qr-corner qr-corner-tr"></div>
+                            <div class="qr-corner qr-corner-bl"></div>
+                            <div class="qr-corner qr-corner-br"></div>
+                            <img src="https://qr.sepay.vn/img?acc=9999909052000&bank=MBBank&amount=2000&des=ziva2ktesting"
+                                alt="QR Code thanh toán MB Bank" class="qr-image" id="paymentQR">
+                        </div>
+                        <p class="qr-hint">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
+                                height="16">
+                                <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+                                <circle cx="12" cy="13" r="4" />
+                            </svg>
+                            Mở App ngân hàng → Quét mã QR
+                        </p>
+                    </div>
+                    <!-- Info Side -->
+                    <div class="payment-info-side">
+                        <div class="bank-badge">
+                            <div class="bank-icon">MB</div>
+                            <span>MB Bank</span>
+                        </div>
+                        <div class="payment-details">
+                            <div class="payment-detail-row">
+                                <span class="detail-label">Ngân hàng</span>
+                                <span class="detail-value">MB Bank (Quân Đội)</span>
+                            </div>
+                            <div class="payment-detail-row">
+                                <span class="detail-label">Số tài khoản</span>
+                                <span class="detail-value detail-account" id="accountNumber">9999909052000</span>
+                                <button class="copy-btn" id="copyAccountBtn"
+                                    onclick="copyToClipboard('9999909052000', this)" title="Sao chép">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        width="16" height="16">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="payment-detail-row">
+                                <span class="detail-label">Số tiền</span>
+                                <span class="detail-value detail-amount">2,000 VNĐ</span>
+                            </div>
+                            <div class="payment-detail-row">
+                                <span class="detail-label">Nội dung CK</span>
+                                <span class="detail-value detail-content" id="transferContent">ziva2ktesting</span>
+                                <button class="copy-btn" id="copyContentBtn"
+                                    onclick="copyToClipboard('ziva2ktesting', this)" title="Sao chép">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        width="16" height="16">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="payment-warning">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                                height="18">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                            <span>Vui lòng giữ <strong>nguyên nội dung chuyển khoản</strong> để hệ thống tự động xác
+                                nhận thanh toán.</span>
+                        </div>
+                        <div class="payment-powered">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14"
+                                height="14">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                            Xác thực tự động bởi <strong>SePay</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <path d="M20 4L6 12V28L20 36L34 28V12L20 4Z" stroke="url(#lgFt)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M20 12V28M14 18H26M12 22H28" stroke="url(#lgFt)" stroke-width="2"
+                                    stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="lgFt" x1="6" y1="4" x2="34" y2="36">
+                                        <stop stop-color="#FF6B00" />
+                                        <stop offset="1" stop-color="#FF9A40" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">THU HỒI NỢ <span class="accent">PRO</span></span>
+                    </a>
+                    <p>Dịch vụ thu hồi nợ chuyên nghiệp, uy tín. Bảo vệ quyền lợi tài chính của bạn bằng phương pháp hợp
+                        pháp và hiệu quả.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Dịch Vụ</h4>
+                    <ul>
+                        <li><a href="#solution">Thu hồi nợ cá nhân</a></li>
+                        <li><a href="#solution">Thu hồi nợ doanh nghiệp</a></li>
+                        <li><a href="#solution">Xử lý nợ xấu lâu năm</a></li>
+                        <li><a href="#solution">Tư vấn pháp lý</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Liên Hệ</h4>
+                    <ul>
+                        <li>📞 Hotline: <a href="tel:0898437922"><strong>089.843.7922</strong></a></li>
+                        <li>💬 Zalo: <a href="https://chat.zalo.me/?phone=0898437922" target="_blank"
+                                rel="noopener noreferrer"><strong>Nhắn tin ngay</strong></a></li>
+                        <li>📍 TP. Hồ Chí Minh, Việt Nam</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Thu Hồi Nợ Pro. Bản quyền được bảo hộ.</p>
+                <div class="footer-links-bottom">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản dịch vụ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING BUTTONS ========== -->
+    <div class="floating-buttons" id="floatingBtns">
+        <a href="tel:0898437922" class="float-btn call-btn" id="floatCall" aria-label="Gọi ngay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+        </a>
+        <a href="https://chat.zalo.me/?phone=0898437922" class="float-btn zalo-btn" id="floatZalo" aria-label="Zalo"
+            target="_blank" rel="noopener noreferrer">
+            <span class="zalo-text">Zalo</span>
+        </a>
+    </div>
+
+    <!-- ========== MOBILE STICKY CTA BAR ========== -->
+    <div class="mobile-cta-bar" id="mobileCta">
+        <a href="https://chat.zalo.me/?phone=0898437922" class="mobile-cta-btn" target="_blank"
+            rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
+            <span>Nhắn Zalo Tư Vấn Ngay</span>
+        </a>
+    </div>
+
+    <!-- ========== CHECKOUT MODAL ========== -->
+    <div id="checkoutModal" class="modal-overlay">
+        <div class="modal-content checkout-modal">
+            <h3 style="color: var(--gold-500); border-bottom: 1px solid var(--border-dark); padding-bottom: 12px; margin-bottom: 16px;">Xác Nhận Thông Tin</h3>
+            <div id="checkoutSummary" style="font-size: 15px; color: #ddd; line-height: 1.6; max-height: 50vh; overflow-y: auto; text-align: left;">
+                <!-- Nội dung summary sẽ được JS chèn vào -->
+            </div>
+            <div style="margin-top: 24px; display: flex; gap: 12px;">
+                <button type="button" class="btn btn-outline" id="btnEditForm" style="flex: 1; border: 1px solid #666; color: #fff;">Quay lại sửa</button>
+                <button type="button" class="btn btn-submit" id="btnConfirmForm" style="flex: 1;">Gửi Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .modal-overlay {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.85);
+        display: none; z-index: 10000;
+        align-items: center; justify-content: center;
+        backdrop-filter: blur(4px);
+    }
+    .modal-overlay.show { display: flex; }
+    .checkout-modal {
+        background: #111;
+        border: 1px solid var(--gold-500);
+        border-radius: 12px;
+        padding: 24px;
+        max-width: 500px;
+        width: 90%;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+    .checkout-summary-item { margin-bottom: 8px; }
+    .checkout-summary-label { color: var(--text-muted); font-size: 13px; display: block; }
+    </style>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

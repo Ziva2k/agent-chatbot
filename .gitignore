@@ -1,0 +1,13 @@
+# Environments
+.env
+__pycache__/
+*.pyc
+
+# Database
+brain.db
+
+# OS files
+.DS_Store
+
+# Temporary files passed during development
+resend_config.txt
