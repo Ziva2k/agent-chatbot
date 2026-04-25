@@ -8,6 +8,13 @@ DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'brain.db')
 def get_db():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
+    # Kiểm tra migration
+    try:
+        conn.execute("ALTER TABLE customers ADD COLUMN is_notified INTEGER DEFAULT 0")
+        conn.commit()
+    except Exception:
+        pass # Duplicate column error
+        
     return conn
 
 mcp = FastMCP("ThuHoiNo_MCP", host="127.0.0.1", port=3001)
@@ -128,6 +135,39 @@ def add_customer_note(phone: str, note_content: str) -> str:
         return f"✅ Đã cập nhật ghi chú thành công cho khách hàng: {c['name']} (SĐT: {phone})."
     except Exception as e:
         return f"Lỗi cập nhật ghi chú: {e}"
+    finally:
+        db.close()
+
+@mcp.tool()
+def check_new_leads() -> str:
+    """
+    Đọc các khách hàng/leads mới đăng ký mà AI chưa báo cáo.
+    Agent nên gọi hàm này định kỳ để kiểm tra tín hiệu kinh doanh.
+    """
+    db = get_db()
+    try:
+        new_leads = db.execute("SELECT id, name, phone, source, registered_at FROM customers WHERE is_notified = 0 ORDER BY registered_at ASC").fetchall()
+        
+        if not new_leads:
+            return "Không có khách/tín hiệu mới."
+            
+        today = datetime.now().strftime("%Y-%m-%d")
+        total_today = db.execute("SELECT COUNT(*) as c FROM customers WHERE DATE(registered_at) = ?", (today,)).fetchone()['c']
+        
+        ids = [str(lead['id']) for lead in new_leads]
+        placeholders = ','.join('?' for _ in ids)
+        db.execute(f"UPDATE customers SET is_notified = 1 WHERE id IN ({placeholders})", ids)
+        db.commit()
+        
+        res = []
+        for lead in new_leads:
+            # Format report
+            msg = f"Tín hiệu mới: Khách hàng '{lead['name']}' vừa đăng ký (Nguồn: {lead['source']}), SĐT: {lead['phone']}. Tổng cộng có {total_today} khách trong ngày hôm nay."
+            res.append(msg)
+            
+        return "\\n".join(res)
+    except Exception as e:
+        return f"Lỗi kiểm tra khách mới: {e}"
     finally:
         db.close()
 

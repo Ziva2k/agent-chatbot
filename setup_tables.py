@@ -48,7 +48,8 @@ def main():
             email TEXT,
             registered_at TEXT DEFAULT CURRENT_TIMESTAMP,
             source TEXT DEFAULT 'website',
-            notes TEXT
+            notes TEXT,
+            is_notified INTEGER DEFAULT 0
         )
     ''')
     print("✅ Bảng 'customers' đã tạo thành công.")
