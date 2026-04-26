@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Gửi Backend châm ngòi Email
             try {
-                await fetch('http://localhost:5000/api/customers', {
+                await fetch('/api/customers', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
