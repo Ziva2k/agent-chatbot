@@ -165,7 +165,7 @@ def check_new_leads() -> str:
             msg = f"Tín hiệu mới: Khách hàng '{lead['name']}' vừa đăng ký (Nguồn: {lead['source']}), SĐT: {lead['phone']}. Tổng cộng có {total_today} khách trong ngày hôm nay."
             res.append(msg)
             
-        return "\\n".join(res)
+        return "\n".join(res)
     except Exception as e:
         return f"Lỗi kiểm tra khách mới: {e}"
     finally:
